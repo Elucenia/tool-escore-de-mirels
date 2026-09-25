@@ -1,0 +1,82 @@
+[
+  {
+    "label": "Úmero, dor leve, blástica, menos de 1/3: 4 pontos",
+    "input": {
+      "local": "1",
+      "dor": "1",
+      "lesao": "1",
+      "tamanho": "1"
+    },
+    "expected": {
+      "score": 4,
+      "level": "low"
+    },
+    "originalInput": {
+      "local": "1",
+      "dor": "1",
+      "lesao": "1",
+      "tamanho": "1"
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Tíbia, dor moderada, mista, 1/3 a 2/3: 8 pontos",
+    "input": {
+      "local": "2",
+      "dor": "2",
+      "lesao": "2",
+      "tamanho": "2"
+    },
+    "expected": {
+      "score": 8,
+      "level": "mid"
+    },
+    "originalInput": {
+      "local": "2",
+      "dor": "2",
+      "lesao": "2",
+      "tamanho": "2"
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Fêmur proximal, dor funcional, lítica, 1/3 a 2/3: 11 pontos",
+    "input": {
+      "local": "3",
+      "dor": "3",
+      "lesao": "3",
+      "tamanho": "2"
+    },
+    "expected": {
+      "score": 11,
+      "level": "high"
+    },
+    "originalInput": {
+      "local": "3",
+      "dor": "3",
+      "lesao": "3",
+      "tamanho": "2"
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Limite: fêmur, dor moderada, lítica, 1/3 a 2/3: 9 pontos",
+    "input": {
+      "local": "2",
+      "dor": "2",
+      "lesao": "3",
+      "tamanho": "2"
+    },
+    "expected": {
+      "score": 9,
+      "level": "high"
+    },
+    "originalInput": {
+      "local": "2",
+      "dor": "2",
+      "lesao": "3",
+      "tamanho": "2"
+    },
+    "expandedZeroOptions": []
+  }
+]

@@ -1,0 +1,261 @@
+{
+  "tool": {
+    "id": "escore-de-mirels",
+    "title": "Escore de Mirels",
+    "short": "Risco de fratura patológica em metástase óssea",
+    "desc": "Escore de Mirels: risco de fratura patológica em metástase de osso longo, pelo local, dor, tipo e tamanho da lesão, com a indicação de fixação profilática.",
+    "lead": "Estima o risco de fratura patológica em metástases de ossos longos e ajuda a decidir entre radioterapia e fixação cirúrgica profilática.",
+    "spec": [
+      "ortopedia-e-traumatologia",
+      "oncologia-clinica",
+      "radioterapia",
+      "cirurgia-oncologica"
+    ],
+    "fields": [
+      [
+        "local",
+        "Local da lesão",
+        "radio",
+        {
+          "opts": {
+            "1": "Membro superior",
+            "2": "Membro inferior",
+            "3": "Peritrocantérica"
+          }
+        }
+      ],
+      [
+        "dor",
+        "Dor",
+        "radio",
+        {
+          "opts": {
+            "1": "Leve",
+            "2": "Moderada",
+            "3": "Funcional (ao carregar peso)"
+          }
+        }
+      ],
+      [
+        "lesao",
+        "Aspecto radiográfico",
+        "radio",
+        {
+          "opts": {
+            "1": "Blástica",
+            "2": "Mista",
+            "3": "Lítica"
+          }
+        }
+      ],
+      [
+        "tamanho",
+        "Tamanho (fração do diâmetro do osso)",
+        "radio",
+        {
+          "opts": {
+            "1": "Menos de 1/3",
+            "2": "1/3 a 2/3",
+            "3": "Mais de 2/3"
+          }
+        }
+      ]
+    ],
+    "score": {
+      "label": "Escore de Mirels",
+      "unit": "de 12",
+      "bands": [
+        [
+          0,
+          "low",
+          "Até 7 pontos: baixo risco de fratura (cerca de 4%)",
+          "Radioterapia e observação."
+        ],
+        [
+          8,
+          "mid",
+          "8 pontos: risco intermediário (cerca de 15%)",
+          "Julgamento clínico: considerar fixação profilática."
+        ],
+        [
+          9,
+          "high",
+          "9 pontos ou mais: alto risco de fratura (33% ou mais)",
+          "Fixação profilática antes da radioterapia."
+        ]
+      ]
+    },
+    "formula": "<p>Quatro itens de 1 a 3 pontos: <strong>local</strong> (membro superior 1, inferior 2, peritrocantérico 3), <strong>dor</strong> (leve 1, moderada 2, funcional 3), <strong>lesão</strong> (blástica 1, mista 2, lítica 3) e <strong>tamanho</strong> em relação ao diâmetro do osso (&lt; 1/3: 1; 1/3 a 2/3: 2; &gt; 2/3: 3). Total de 4 a 12.</p>",
+    "table": [
+      [
+        "Pontos",
+        "Risco de fratura",
+        "Conduta sugerida"
+      ],
+      [
+        "≤ 7",
+        "≈ 4%",
+        "Radioterapia e observação"
+      ],
+      [
+        "8",
+        "≈ 15%",
+        "Julgamento clínico"
+      ],
+      [
+        "≥ 9",
+        "≥ 33%",
+        "Fixação profilática"
+      ]
+    ],
+    "table_note": "Taxas de fratura da série original de Mirels (1989).",
+    "tips": [
+      "A <strong>dor funcional</strong> (que piora ao carregar peso) é o item que mais prediz fratura: leve a sério mesmo com escore baixo.",
+      "O escore é sensível, mas pouco específico: muitos pacientes com 9 ou mais não fraturariam. Pese prognóstico, tipo de tumor e condição clínica.",
+      "Avalie a lesão em duas incidências e, se houver dúvida sobre destruição cortical, use tomografia.",
+      "Após a fixação, a radioterapia do osso inteiro reduz a progressão local e a falha do material.",
+      "Não se aplica à coluna nem à pelve: nesses locais, use o SINS e avaliação específica."
+    ],
+    "sources": [
+      [
+        "Mirels H. Metastatic disease in long bones: a proposed scoring system for diagnosing impending pathologic fractures. Clin Orthop Relat Res, 1989.",
+        "https://doi.org/10.1097/00003086-198912000-00027"
+      ],
+      [
+        "Jawad MU, Scully SP. In brief: classifications in brief: Mirels classification: metastatic disease in long bones and impending pathologic fracture. Clin Orthop Relat Res, 2010.",
+        "https://doi.org/10.1007/s11999-010-1326-4"
+      ]
+    ],
+    "cases": [
+      [
+        "Úmero, dor leve, blástica, menos de 1/3: 4 pontos",
+        {
+          "local": "1",
+          "dor": "1",
+          "lesao": "1",
+          "tamanho": "1"
+        },
+        {
+          "score": 4,
+          "level": "low"
+        }
+      ],
+      [
+        "Tíbia, dor moderada, mista, 1/3 a 2/3: 8 pontos",
+        {
+          "local": "2",
+          "dor": "2",
+          "lesao": "2",
+          "tamanho": "2"
+        },
+        {
+          "score": 8,
+          "level": "mid"
+        }
+      ],
+      [
+        "Fêmur proximal, dor funcional, lítica, 1/3 a 2/3: 11 pontos",
+        {
+          "local": "3",
+          "dor": "3",
+          "lesao": "3",
+          "tamanho": "2"
+        },
+        {
+          "score": 11,
+          "level": "high"
+        }
+      ],
+      [
+        "Limite: fêmur, dor moderada, lítica, 1/3 a 2/3: 9 pontos",
+        {
+          "local": "2",
+          "dor": "2",
+          "lesao": "3",
+          "tamanho": "2"
+        },
+        {
+          "score": 9,
+          "level": "high"
+        }
+      ]
+    ],
+    "batch": "cirurgia-sentidos",
+    "kind": "Escore",
+    "config": {
+      "unit": "de 12",
+      "label": "Escore de Mirels",
+      "fields": [
+        [
+          "local",
+          "radio",
+          0
+        ],
+        [
+          "dor",
+          "radio",
+          0
+        ],
+        [
+          "lesao",
+          "radio",
+          0
+        ],
+        [
+          "tamanho",
+          "radio",
+          0
+        ]
+      ],
+      "bands": [
+        [
+          0,
+          "low",
+          "Até 7 pontos: baixo risco de fratura (cerca de 4%)",
+          "Radioterapia e observação."
+        ],
+        [
+          8,
+          "mid",
+          "8 pontos: risco intermediário (cerca de 15%)",
+          "Julgamento clínico: considerar fixação profilática."
+        ],
+        [
+          9,
+          "high",
+          "9 pontos ou mais: alto risco de fratura (33% ou mais)",
+          "Fixação profilática antes da radioterapia."
+        ]
+      ]
+    },
+    "areaId": "cirurgia-sentidos",
+    "clinicalReview": "pending",
+    "sourceReview": "pending",
+    "sourceFile": "app/content/ferramentas/cirurgia-sentidos.php",
+    "arithmeticTest": {
+      "status": "passed",
+      "testedAt": "2026-09-25",
+      "total": 4,
+      "passed": 4,
+      "failures": []
+    },
+    "independentArithmeticTest": {
+      "status": "not-tested",
+      "testedAt": null,
+      "total": 0,
+      "passed": 0,
+      "cases": []
+    }
+  },
+  "review": {
+    "status": "needs-review",
+    "reason": "Revisão documental e clínica independente pendente.",
+    "clinicalValidation": "not-performed"
+  },
+  "sourceFile": {
+    "path": "app/content/ferramentas/cirurgia-sentidos.php",
+    "sha256": "21fc91a9a8187a66496f68c2ac8fbdd20a65ceeea519687c963b857f72640866",
+    "bytes": 89063
+  },
+  "clinicalValidation": "not-performed"
+}
