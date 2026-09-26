@@ -1,11 +1,11 @@
-/* tool-escore-de-mirels · Elucenia · https://github.com/Elucenia/tool-escore-de-mirels
-   Copyright (c) 2026 Elucenia · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
+/* tool-escore-de-mirels · ELUCENIA · https://github.com/Elucenia/tool-escore-de-mirels
+   Copyright (c) 2026 ELUCENIA · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
    Standalone integration. Package metadata and rights: README.md. */
 (function(root){'use strict';
 function freeze(value){if(value&&typeof value==='object'){for(const item of Object.values(value))freeze(item);Object.freeze(value);}return value;}
 const TOOL=freeze({"id":"escore-de-mirels","title":"Escore de Mirels","fields":[["local","Local da lesão","radio",{"opts":{"1":"Membro superior","2":"Membro inferior","3":"Peritrocantérica"}}],["dor","Dor","radio",{"opts":{"1":"Leve","2":"Moderada","3":"Funcional (ao carregar peso)"}}],["lesao","Aspecto radiográfico","radio",{"opts":{"1":"Blástica","2":"Mista","3":"Lítica"}}],["tamanho","Tamanho (fração do diâmetro do osso)","radio",{"opts":{"1":"Menos de 1/3","2":"1/3 a 2/3","3":"Mais de 2/3"}}]],"config":{"unit":"de 12","label":"Escore de Mirels","fields":[["local","radio",0],["dor","radio",0],["lesao","radio",0],["tamanho","radio",0]],"bands":[[0,"low","Até 7 pontos: baixo risco de fratura (cerca de 4%)","Radioterapia e observação."],[8,"mid","8 pontos: risco intermediário (cerca de 15%)","Julgamento clínico: considerar fixação profilática."],[9,"high","9 pontos ou mais: alto risco de fratura (33% ou mais)","Fixação profilática antes da radioterapia."]]},"reviewStatus":"needs-review","clinicalValidation":"not-performed"});
 const window={};
-/* Elucenia arithmetic registry. No DOM access, storage, telemetry or network requests. */
+/* ELUCENIA arithmetic registry. No DOM access, storage, telemetry or network requests. */
 (function(root){
   'use strict';
   const CALC={fn:Object.create(null)};
