@@ -25,7 +25,7 @@ Serve this directory with a static HTTP server and open index.html. The demonstr
 
 Mirels 1989:local/dor/lesão/tamanho 1–3, total 4–12
 
-results.json records fresh current source and packaged browser VM parity. Browser VM is an isolated JavaScript realm, not a real browser UI/hydration journey. The new served HTTP R6 replay is pending and will be attached only after completion. Existing synthetic source expectations are not a newly derived clinical oracle. Independent clinical and professional language approval have not been performed.
+results.json records fresh current source and packaged browser VM parity. Browser VM is an isolated JavaScript realm, not a real browser UI/hydration journey. The actual local frozen R6 HTTP replay is recorded in [evidence/served-http-r6.json](evidence/served-http-r6.json): 4 documented source cases passed, and the served calculator source hash equals this package engine. This is not a real browser journey or Hostinger production deployment confirmation. Existing synthetic source expectations are not a newly derived clinical oracle. Independent clinical and professional language approval have not been performed.
 
 ## Source and licence scope
 
