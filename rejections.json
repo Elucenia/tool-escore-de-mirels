@@ -1,0 +1,202 @@
+[
+  {
+    "name": "Reject null input",
+    "input": null,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject array input",
+    "input": [],
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject string input",
+    "input": "invalid",
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject numeric input",
+    "input": 1,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field local",
+    "input": {
+      "dor": "1",
+      "lesao": "1",
+      "tamanho": "1"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "local"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field local",
+    "input": {
+      "local": "",
+      "dor": "1",
+      "lesao": "1",
+      "tamanho": "1"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "local"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option local",
+    "input": {
+      "local": "__ELUCENIA_INVALID_OPTION__",
+      "dor": "1",
+      "lesao": "1",
+      "tamanho": "1"
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "local"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field dor",
+    "input": {
+      "local": "1",
+      "lesao": "1",
+      "tamanho": "1"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "dor"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field dor",
+    "input": {
+      "local": "1",
+      "dor": "",
+      "lesao": "1",
+      "tamanho": "1"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "dor"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option dor",
+    "input": {
+      "local": "1",
+      "dor": "__ELUCENIA_INVALID_OPTION__",
+      "lesao": "1",
+      "tamanho": "1"
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "dor"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field lesao",
+    "input": {
+      "local": "1",
+      "dor": "1",
+      "tamanho": "1"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "lesao"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field lesao",
+    "input": {
+      "local": "1",
+      "dor": "1",
+      "lesao": "",
+      "tamanho": "1"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "lesao"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option lesao",
+    "input": {
+      "local": "1",
+      "dor": "1",
+      "lesao": "__ELUCENIA_INVALID_OPTION__",
+      "tamanho": "1"
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "lesao"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field tamanho",
+    "input": {
+      "local": "1",
+      "dor": "1",
+      "lesao": "1"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "tamanho"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field tamanho",
+    "input": {
+      "local": "1",
+      "dor": "1",
+      "lesao": "1",
+      "tamanho": ""
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "tamanho"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option tamanho",
+    "input": {
+      "local": "1",
+      "dor": "1",
+      "lesao": "1",
+      "tamanho": "__ELUCENIA_INVALID_OPTION__"
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "tamanho"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  }
+]

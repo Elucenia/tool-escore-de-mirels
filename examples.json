@@ -1,6 +1,15 @@
 [
   {
-    "label": "Úmero, dor leve, blástica, menos de 1/3: 4 pontos",
+    "id": "escore-de-mirels",
+    "kind": "native-source-reference",
+    "index": 0,
+    "name": "Úmero, dor leve, blástica, menos de 1/3: 4 pontos",
+    "originalInput": {
+      "local": "1",
+      "dor": "1",
+      "lesao": "1",
+      "tamanho": "1"
+    },
     "input": {
       "local": "1",
       "dor": "1",
@@ -11,16 +20,36 @@
       "score": 4,
       "level": "low"
     },
-    "originalInput": {
-      "local": "1",
-      "dor": "1",
-      "lesao": "1",
-      "tamanho": "1"
+    "recordedResult": {
+      "main": [
+        "4",
+        "de 12"
+      ],
+      "label": "Escore de Mirels",
+      "raw": {
+        "score": 4
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Tíbia, dor moderada, mista, 1/3 a 2/3: 8 pontos",
+    "id": "escore-de-mirels",
+    "kind": "native-source-reference",
+    "index": 1,
+    "name": "Tíbia, dor moderada, mista, 1/3 a 2/3: 8 pontos",
+    "originalInput": {
+      "local": "2",
+      "dor": "2",
+      "lesao": "2",
+      "tamanho": "2"
+    },
     "input": {
       "local": "2",
       "dor": "2",
@@ -31,16 +60,36 @@
       "score": 8,
       "level": "mid"
     },
-    "originalInput": {
-      "local": "2",
-      "dor": "2",
-      "lesao": "2",
-      "tamanho": "2"
+    "recordedResult": {
+      "main": [
+        "8",
+        "de 12"
+      ],
+      "label": "Escore de Mirels",
+      "raw": {
+        "score": 8
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Fêmur proximal, dor funcional, lítica, 1/3 a 2/3: 11 pontos",
+    "id": "escore-de-mirels",
+    "kind": "native-source-reference",
+    "index": 2,
+    "name": "Fêmur proximal, dor funcional, lítica, 1/3 a 2/3: 11 pontos",
+    "originalInput": {
+      "local": "3",
+      "dor": "3",
+      "lesao": "3",
+      "tamanho": "2"
+    },
     "input": {
       "local": "3",
       "dor": "3",
@@ -51,16 +100,36 @@
       "score": 11,
       "level": "high"
     },
+    "recordedResult": {
+      "main": [
+        "11",
+        "de 12"
+      ],
+      "label": "Escore de Mirels",
+      "raw": {
+        "score": 11
+      }
+    },
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
+  },
+  {
+    "id": "escore-de-mirels",
+    "kind": "native-source-reference",
+    "index": 3,
+    "name": "Limite: fêmur, dor moderada, lítica, 1/3 a 2/3: 9 pontos",
     "originalInput": {
-      "local": "3",
-      "dor": "3",
+      "local": "2",
+      "dor": "2",
       "lesao": "3",
       "tamanho": "2"
     },
-    "expandedZeroOptions": []
-  },
-  {
-    "label": "Limite: fêmur, dor moderada, lítica, 1/3 a 2/3: 9 pontos",
     "input": {
       "local": "2",
       "dor": "2",
@@ -71,12 +140,23 @@
       "score": 9,
       "level": "high"
     },
-    "originalInput": {
-      "local": "2",
-      "dor": "2",
-      "lesao": "3",
-      "tamanho": "2"
+    "recordedResult": {
+      "main": [
+        "9",
+        "de 12"
+      ],
+      "label": "Escore de Mirels",
+      "raw": {
+        "score": 9
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   }
 ]

@@ -5,6 +5,7 @@
     "short": "Risco de fratura patológica em metástase óssea",
     "desc": "Escore de Mirels: risco de fratura patológica em metástase de osso longo, pelo local, dor, tipo e tamanho da lesão, com a indicação de fixação profilática.",
     "lead": "Estima o risco de fratura patológica em metástases de ossos longos e ajuda a decidir entre radioterapia e fixação cirúrgica profilática.",
+    "kind": "Escore",
     "spec": [
       "ortopedia-e-traumatologia",
       "oncologia-clinica",
@@ -61,61 +62,7 @@
         }
       ]
     ],
-    "score": {
-      "label": "Escore de Mirels",
-      "unit": "de 12",
-      "bands": [
-        [
-          0,
-          "low",
-          "Até 7 pontos: baixo risco de fratura (cerca de 4%)",
-          "Radioterapia e observação."
-        ],
-        [
-          8,
-          "mid",
-          "8 pontos: risco intermediário (cerca de 15%)",
-          "Julgamento clínico: considerar fixação profilática."
-        ],
-        [
-          9,
-          "high",
-          "9 pontos ou mais: alto risco de fratura (33% ou mais)",
-          "Fixação profilática antes da radioterapia."
-        ]
-      ]
-    },
     "formula": "<p>Quatro itens de 1 a 3 pontos: <strong>local</strong> (membro superior 1, inferior 2, peritrocantérico 3), <strong>dor</strong> (leve 1, moderada 2, funcional 3), <strong>lesão</strong> (blástica 1, mista 2, lítica 3) e <strong>tamanho</strong> em relação ao diâmetro do osso (&lt; 1/3: 1; 1/3 a 2/3: 2; &gt; 2/3: 3). Total de 4 a 12.</p>",
-    "table": [
-      [
-        "Pontos",
-        "Risco de fratura",
-        "Conduta sugerida"
-      ],
-      [
-        "≤ 7",
-        "≈ 4%",
-        "Radioterapia e observação"
-      ],
-      [
-        "8",
-        "≈ 15%",
-        "Julgamento clínico"
-      ],
-      [
-        "≥ 9",
-        "≥ 33%",
-        "Fixação profilática"
-      ]
-    ],
-    "table_note": "Taxas de fratura da série original de Mirels (1989).",
-    "tips": [
-      "A <strong>dor funcional</strong> (que piora ao carregar peso) é o item que mais prediz fratura: leve a sério mesmo com escore baixo.",
-      "O escore é sensível, mas pouco específico: muitos pacientes com 9 ou mais não fraturariam. Pese prognóstico, tipo de tumor e condição clínica.",
-      "Avalie a lesão em duas incidências e, se houver dúvida sobre destruição cortical, use tomografia.",
-      "Após a fixação, a radioterapia do osso inteiro reduz a progressão local e a falha do material.",
-      "Não se aplica à coluna nem à pelve: nesses locais, use o SINS e avaliação específica."
-    ],
     "sources": [
       [
         "Mirels H. Metastatic disease in long bones: a proposed scoring system for diagnosing impending pathologic fractures. Clin Orthop Relat Res, 1989.",
@@ -180,54 +127,6 @@
         }
       ]
     ],
-    "kind": "Escore",
-    "config": {
-      "unit": "de 12",
-      "label": "Escore de Mirels",
-      "fields": [
-        [
-          "local",
-          "radio",
-          0
-        ],
-        [
-          "dor",
-          "radio",
-          0
-        ],
-        [
-          "lesao",
-          "radio",
-          0
-        ],
-        [
-          "tamanho",
-          "radio",
-          0
-        ]
-      ],
-      "bands": [
-        [
-          0,
-          "low",
-          "Até 7 pontos: baixo risco de fratura (cerca de 4%)",
-          "Radioterapia e observação."
-        ],
-        [
-          8,
-          "mid",
-          "8 pontos: risco intermediário (cerca de 15%)",
-          "Julgamento clínico: considerar fixação profilática."
-        ],
-        [
-          9,
-          "high",
-          "9 pontos ou mais: alto risco de fratura (33% ou mais)",
-          "Fixação profilática antes da radioterapia."
-        ]
-      ]
-    },
-    "clinicalReview": "pending",
     "arithmeticTest": {
       "status": "passed",
       "testedAt": "2026-09-25",
@@ -236,17 +135,546 @@
       "failures": []
     },
     "independentArithmeticTest": {
-      "status": "not-tested",
-      "testedAt": null,
-      "total": 0,
-      "passed": 0,
-      "cases": []
+      "status": "passed",
+      "testedAt": "2026-10-04T16:44:15.367Z",
+      "total": 81,
+      "passed": 81,
+      "sourceRowCount": 81,
+      "uniqueApiInputCount": 81,
+      "sourceContextCount": 81,
+      "embeddedCasesAreSubset": true,
+      "embeddedCaseCount": 4,
+      "caseStorage": {
+        "mode": "complete-downloadable-bank-with-inline-subset",
+        "file": "independent-source-cases.json",
+        "sha256": "7540f2eef7d70a0444711f88679a3a17d134bc5192688c243651c31639e6b0e3",
+        "total": 81,
+        "bankRowCount": 81,
+        "uniqueApiInputCount": 81,
+        "sourceContextCount": 81,
+        "expectedEvidence": [
+          {
+            "file": "reports/review-20261003/seven-limited-source-independent-expectations-final26.json",
+            "sha256": "4b960d8c215321b3f059726a3b7bc6b35f0fe4d63a7ee845fbc6edb535a4f0cc"
+          },
+          {
+            "file": "reports/review-20261003/oncology-four-independent-expectations-final26.json",
+            "sha256": "2c3a5304f6cccc8881724df497af561eb6cfdb3b76e5c016e1c9f0a681c477b5"
+          }
+        ],
+        "obtainedEvidence": {
+          "file": "reports/review-20261003/seven-limited-source-independent-check-final26.json",
+          "sha256": "b95bdfad7528cd2f56739eb04b63d3775e93b50844568167df849a489382cd80"
+        },
+        "packagingRequirement": "Copy this V2 strictly scoped complete bank only into fresh frozen26 packages after independent peer; V1 and prior25 archives remain unchanged."
+      },
+      "inputIdentity": {
+        "definition": "Distinct JSON input objects within each method after recursively sorting object keys; array order, numeric values and JSON value types preserved. Uses stored input/inputs before implicit default completion, numeric coercion or clinical feature interpretation. Identity across different methods is not collapsed. Repeated scenarios are retained and coverage status is unchanged.",
+        "audit": {
+          "file": "reports/review-20261003/seven-limited-source-input-identity-final26.json",
+          "sha256": "e184ba55d7cd2c90120c495d3143d067bd5d72ae98b914f22a75fb943e510d94"
+        },
+        "sourceRows": 81,
+        "uniqueApiInputs": 81,
+        "duplicateRows": 0
+      },
+      "scope": "Mirels1989 table in the explicit2003 author/publisher reprint: all81 preclassified four-domain point tuples, integer sum4–12 only. Actual1989 PDF not reviewed. Abstract8 versus body9 decision conflict remains unadjudicated. No imaging/pain classification, fracture probability, fixation or irradiation approval.",
+      "sources": [
+        {
+          "id": "escore-de-mirels",
+          "edition": "Mirels1989, explicit author/publisher Classic reprint2003",
+          "url": "https://upload.orthobullets.com/journalclub/free_pdf/2684463.pdf",
+          "identity": "Original PMID2684463; reprint DOI10.1097/01.blo.0000093045.56370.dd, CORR415S:S4–S13,2003",
+          "access": "Downloaded original-paper reprint; Methods/Table1 at PDFp4/printedS7 and Results/Discussion passages read. Table1 visually inspected as local PNG. PubMed direct open returned footer only; indexed original abstract was available. This is not the actual1989 publisher PDF.",
+          "primaryFacts": {
+            "population": "Retrospective38patients/78 metastatic long-bone lesions,1981–1985; radiotherapy without previous fracture, irradiation or prophylactic fixation; outcome≥6months or fracture. Reported ages36–87.",
+            "table": "Four selected domains, each1–3: site upper/lower/peritrochanter; pain mild/moderate/functional; lesion blastic/mixed/lytic; size<1/3,1/3–2/3,>2/3. Sum4–12."
+          },
+          "readScope": [
+            "PDFp1–2 abstract/provenance",
+            "PDFp4 Table1/Methods",
+            "PDFp5 Results",
+            "PDFp6 Table5",
+            "relevant Discussion excerpts"
+          ],
+          "notVerified": [
+            "Actual1989 publisher bytes",
+            "Clinical identification of each radiographic/pain category",
+            "Patient-level fracture probability, predictive accuracy or surgery indication"
+          ],
+          "evidenceFiles": [
+            "oncology-four-primary-final26/mirels1989-reprint2003.pdf",
+            "oncology-four-primary-final26/mirels-table1-04.png"
+          ]
+        }
+      ],
+      "evidencePath": "reports/review-20261003/seven-limited-source-independent-check-final26.json",
+      "evidenceSha256": "b95bdfad7528cd2f56739eb04b63d3775e93b50844568167df849a489382cd80",
+      "originalEvidence": {
+        "file": "reports/review-20261003/oncology-four-independent-source-check-final26.json",
+        "sha256": "61b59c9f707a2425440f6b71c5deb27cbddf401c9c8be32841a040898c4d1e56"
+      },
+      "independentPeer": {
+        "status": "passed",
+        "requiredScope": "Metadata/helper/source-component peer before root application; no clinical approval inferred.",
+        "recordedAt": "2026-10-04T18:58:09.995Z",
+        "scope": "Existing independent technical complete-bank/metadata/helper peer recorded after guarded source26 application. This status does not certify clinical eligibility, full instrument conformance, professional translation or source rights; no new arithmetic/browser execution is claimed by this metadata amendment.",
+        "previousStatus": {
+          "status": "pending",
+          "requiredScope": "Metadata/helper/source-component peer before root application; no clinical approval inferred."
+        },
+        "peer": {
+          "file": "reports/review-20261003/seven-limited-source-evidence-independent-peer-final26-v2-r2.json",
+          "sha256": "28a96906dcfa0ce5272da34613c4ca61686204552a235ebc4adbb65e4ff6868c",
+          "summary": {
+            "checks": 18879,
+            "failed": 0,
+            "methods": 7,
+            "sourceRows": 2902,
+            "uniqueInputs": 2902,
+            "freshExecutions": 8706,
+            "helperAssertions": 25953,
+            "metadataMethods": 120,
+            "metadataRows": 52620,
+            "metadataUnique": 52548,
+            "metadataRepeats": 72
+          },
+          "scope": "Root independent peer of exact41 preimages/afterimages; independently frozen2902 input/expected objects checked before imports; public bank numeric projection excludes untested survival, zones, prose and risk codes. Original862fixtures, fields, methods, versions and approvals retained. Exact helper reversal restores all11 previous scopes;21 fresh Node helper executions replay all7 limited numeric components without clinical approval."
+        },
+        "application": {
+          "file": "reports/review-20261003/seven-limited-source-evidence-application-final26.json",
+          "sha256": "3b1cd7d57c7062aa640504095c1a7eca5b051af7c0c0c8d4d5b1965a869080da"
+        },
+        "reviewedBankScope": "Mirels1989 table in the explicit2003 author/publisher reprint: all81 preclassified four-domain point tuples, integer sum4–12 only. Actual1989 PDF not reviewed. Abstract8 versus body9 decision conflict remains unadjudicated. No imaging/pain classification, fracture probability, fixation or irradiation approval.",
+        "currentBinding": {
+          "source26BankSha256": "2cc897d2829889e4f2b36d8e4879d084e559506df46ef6b65b141e55b9d70d49",
+          "implementations": [
+            {
+              "file": "apps/website/private/tool-code/escore-de-mirels/calculator.js",
+              "sha256": "886b5b337905f52d0d15ec614d789a3778a1fa4a3748ba206fc2d5459351c8e1"
+            },
+            {
+              "file": "apps/dashboard/private/tool-code/escore-de-mirels/calculator.js",
+              "sha256": "886b5b337905f52d0d15ec614d789a3778a1fa4a3748ba206fc2d5459351c8e1"
+            },
+            {
+              "file": "apps/command-center/private/tool-code/escore-de-mirels/calculator.js",
+              "sha256": "886b5b337905f52d0d15ec614d789a3778a1fa4a3748ba206fc2d5459351c8e1"
+            }
+          ],
+          "subsequentReviewedRebinds": []
+        },
+        "originalFailuresAndScopeQualificationsPreserved": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed"
+      },
+      "actualAdapterExecutions": 243,
+      "actualVmExecutions": 243,
+      "implementations": [
+        {
+          "id": "escore-de-mirels",
+          "app": "website",
+          "file": "apps/website/private/tool-code/escore-de-mirels/calculator.js",
+          "sha256": "886b5b337905f52d0d15ec614d789a3778a1fa4a3748ba206fc2d5459351c8e1"
+        },
+        {
+          "id": "escore-de-mirels",
+          "app": "dashboard",
+          "file": "apps/dashboard/private/tool-code/escore-de-mirels/calculator.js",
+          "sha256": "886b5b337905f52d0d15ec614d789a3778a1fa4a3748ba206fc2d5459351c8e1"
+        },
+        {
+          "id": "escore-de-mirels",
+          "app": "command-center",
+          "file": "apps/command-center/private/tool-code/escore-de-mirels/calculator.js",
+          "sha256": "886b5b337905f52d0d15ec614d789a3778a1fa4a3748ba206fc2d5459351c8e1"
+        }
+      ],
+      "qualifications": [
+        "Mirels1989 table in the explicit2003 author/publisher reprint: all81 preclassified four-domain point tuples, integer sum4–12 only. Actual1989 PDF not reviewed. Abstract8 versus body9 decision conflict remains unadjudicated. No imaging/pain classification, fracture probability, fixation or irradiation approval.",
+        "Original sourceExpected data retained alongside own expected raw-component projections; clinical codes/thresholds and survival fields deliberately excluded from the package replay.",
+        "All862 original historical fixtures/expected values/tolerances and approval flags preserved. Four inline metadata rows are only a declared subset of this complete downloadable bank."
+      ],
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed",
+      "sourceRightsApproval": "not-performed",
+      "fullMethodConformance": "not-performed",
+      "publicOutputProjection": {
+        "status": "only-verified-raw-numeric-components",
+        "recordedAt": "2026-10-04T16:49:59.830Z",
+        "sourceEvidence": {
+          "file": "reports/review-20261003/seven-limited-source-independent-check-final26.json",
+          "sha256": "b95bdfad7528cd2f56739eb04b63d3775e93b50844568167df849a489382cd80"
+        },
+        "originalBank": {
+          "file": "reports/review-20261003/seven-limited-source-evidence-stage-final26/apps/website/private/tool-code/escore-de-mirels/independent-source-cases.json",
+          "sha256": "e842a96ba59a4426dafc5e024a6317eb0a0b9a1b537e6d7c3833df0f07d22d13"
+        },
+        "originalReportsPreserved": true,
+        "excluded": [
+          "Unexposed MASCC risk flag and USC/VNPI group expectations",
+          "MACIS survival and other untested returned raw fields",
+          "Karvonen exercise-zone main display and all untested main display values",
+          "Original API error prose; only rejection presence is tested"
+        ],
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed"
+      },
+      "publicCandidateBankOmitted": true
+    },
+    "methodVersion": "Mirels 1989:local/dor/lesão/tamanho 1–3, total 4–12",
+    "implementationVersion": "escore-de-mirels@native-2026-10-03+886b5b337905",
+    "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/2684463/",
+    "versionEvidence": {
+      "status": "variant-and-source-edition-recorded",
+      "checkedAt": "2026-10-03",
+      "implementedVariant": "Quatro itens de 1 a 3 pontos: local (membro superior 1, inferior 2, peritrocantérico 3), dor (leve 1, moderada 2, funcional 3), lesão (blástica 1, mista 2, lítica 3) e tamanho em relação ao diâmetro do osso (< 1/3: 1; 1/3 a 2/3: 2; > 2/3: 3). Total de 4 a 12.",
+      "inputContract": {
+        "fields": [
+          {
+            "key": "local",
+            "label": "Local da lesão",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "1": "Membro superior",
+              "2": "Membro inferior",
+              "3": "Peritrocantérica"
+            }
+          },
+          {
+            "key": "dor",
+            "label": "Dor",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "1": "Leve",
+              "2": "Moderada",
+              "3": "Funcional (ao carregar peso)"
+            }
+          },
+          {
+            "key": "lesao",
+            "label": "Aspecto radiográfico",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "1": "Blástica",
+              "2": "Mista",
+              "3": "Lítica"
+            }
+          },
+          {
+            "key": "tamanho",
+            "label": "Tamanho (fração do diâmetro do osso)",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "1": "Menos de 1/3",
+              "2": "1/3 a 2/3",
+              "3": "Mais de 2/3"
+            }
+          }
+        ],
+        "hash": "53dcf9b294d3495176208833221e34d3c399c464b02a0791f689991c5294e334"
+      },
+      "sourceEditions": [
+        {
+          "citation": "Mirels H. Metastatic disease in long bones: a proposed scoring system for diagnosing impending pathologic fractures. Clin Orthop Relat Res, 1989.",
+          "url": "https://doi.org/10.1097/00003086-198912000-00027",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "Metastatic disease in long bones. A proposed scoring system for diagnosing impending pathologic fractures.",
+            "year": "1989",
+            "firstPublicationDate": "1989-12-01",
+            "doi": "10.1097/01.blo.0000093045.56370.dd",
+            "pmid": "2684463",
+            "journal": "Clinical orthopaedics and related research",
+            "authors": "Mirels H."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/2684463/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "41ca307741ff3b7dff3bd3d20e6724bcbc817826454fe1c80a4f4a5161af3c7f",
+          "matchedBy": "exact-publication-title",
+          "publisherDepositedMetadata": {
+            "title": "Metastatic Disease in Long Bones A Proposed Scoring System for Diagnosing Impending Pathologic Fractures",
+            "doi": "10.1097/00003086-198912000-00027",
+            "year": 1989,
+            "publisher": "Ovid Technologies (Wolters Kluwer Health)",
+            "journal": "Clinical Orthopaedics and Related Research",
+            "authors": [
+              "HILTON MIRELS"
+            ],
+            "url": "https://doi.org/10.1097/00003086-198912000-00027"
+          },
+          "doiAliasOrMismatchRequiresReview": {
+            "listed": "https://doi.org/10.1097/00003086-198912000-00027",
+            "indexed": "10.1097/01.blo.0000093045.56370.dd",
+            "crossrefListedDoiMetadataRead": true
+          }
+        },
+        {
+          "citation": "Jawad MU, Scully SP. In brief: classifications in brief: Mirels classification: metastatic disease in long bones and impending pathologic fracture. Clin Orthop Relat Res, 2010.",
+          "url": "https://doi.org/10.1007/s11999-010-1326-4",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "In brief: classifications in brief: Mirels' classification: metastatic disease in long bones and impending pathologic fracture.",
+            "year": "2010",
+            "firstPublicationDate": "2010-10-01",
+            "doi": "10.1007/s11999-010-1326-4",
+            "pmid": "20352387",
+            "pmcid": "PMC3049613",
+            "journal": "Clinical orthopaedics and related research",
+            "authors": "Jawad MU, Scully SP."
+          },
+          "primaryPublicationUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3049613/",
+          "abstractAvailable": false,
+          "fullTextSha256": null,
+          "abstractSha256": null,
+          "matchedBy": "exact-DOI-or-PMID"
+        }
+      ],
+      "publicationEditionConfirmed": true,
+      "fullFormulaConformanceReviewed": false,
+      "formulaConformance": "Not established by bibliographic identity or automatic full-text retrieval; retain independent arithmetic and clinical review as separate evidence.",
+      "independentArithmetic": {
+        "status": "passed",
+        "testedAt": "2026-10-04T16:44:15.367Z",
+        "total": 81,
+        "passed": 81,
+        "sourceRowCount": 81,
+        "uniqueApiInputCount": 81,
+        "sourceContextCount": 81,
+        "embeddedCasesAreSubset": true,
+        "embeddedCaseCount": 4,
+        "caseStorage": {
+          "mode": "complete-downloadable-bank-with-inline-subset",
+          "file": "independent-source-cases.json",
+          "sha256": "7540f2eef7d70a0444711f88679a3a17d134bc5192688c243651c31639e6b0e3",
+          "total": 81,
+          "bankRowCount": 81,
+          "uniqueApiInputCount": 81,
+          "sourceContextCount": 81,
+          "expectedEvidence": [
+            {
+              "file": "reports/review-20261003/seven-limited-source-independent-expectations-final26.json",
+              "sha256": "4b960d8c215321b3f059726a3b7bc6b35f0fe4d63a7ee845fbc6edb535a4f0cc"
+            },
+            {
+              "file": "reports/review-20261003/oncology-four-independent-expectations-final26.json",
+              "sha256": "2c3a5304f6cccc8881724df497af561eb6cfdb3b76e5c016e1c9f0a681c477b5"
+            }
+          ],
+          "obtainedEvidence": {
+            "file": "reports/review-20261003/seven-limited-source-independent-check-final26.json",
+            "sha256": "b95bdfad7528cd2f56739eb04b63d3775e93b50844568167df849a489382cd80"
+          },
+          "packagingRequirement": "Copy this V2 strictly scoped complete bank only into fresh frozen26 packages after independent peer; V1 and prior25 archives remain unchanged."
+        },
+        "inputIdentity": {
+          "definition": "Distinct JSON input objects within each method after recursively sorting object keys; array order, numeric values and JSON value types preserved. Uses stored input/inputs before implicit default completion, numeric coercion or clinical feature interpretation. Identity across different methods is not collapsed. Repeated scenarios are retained and coverage status is unchanged.",
+          "audit": {
+            "file": "reports/review-20261003/seven-limited-source-input-identity-final26.json",
+            "sha256": "e184ba55d7cd2c90120c495d3143d067bd5d72ae98b914f22a75fb943e510d94"
+          },
+          "sourceRows": 81,
+          "uniqueApiInputs": 81,
+          "duplicateRows": 0
+        },
+        "scope": "Mirels1989 table in the explicit2003 author/publisher reprint: all81 preclassified four-domain point tuples, integer sum4–12 only. Actual1989 PDF not reviewed. Abstract8 versus body9 decision conflict remains unadjudicated. No imaging/pain classification, fracture probability, fixation or irradiation approval.",
+        "sources": [
+          {
+            "id": "escore-de-mirels",
+            "edition": "Mirels1989, explicit author/publisher Classic reprint2003",
+            "url": "https://upload.orthobullets.com/journalclub/free_pdf/2684463.pdf",
+            "identity": "Original PMID2684463; reprint DOI10.1097/01.blo.0000093045.56370.dd, CORR415S:S4–S13,2003",
+            "access": "Downloaded original-paper reprint; Methods/Table1 at PDFp4/printedS7 and Results/Discussion passages read. Table1 visually inspected as local PNG. PubMed direct open returned footer only; indexed original abstract was available. This is not the actual1989 publisher PDF.",
+            "primaryFacts": {
+              "population": "Retrospective38patients/78 metastatic long-bone lesions,1981–1985; radiotherapy without previous fracture, irradiation or prophylactic fixation; outcome≥6months or fracture. Reported ages36–87.",
+              "table": "Four selected domains, each1–3: site upper/lower/peritrochanter; pain mild/moderate/functional; lesion blastic/mixed/lytic; size<1/3,1/3–2/3,>2/3. Sum4–12."
+            },
+            "readScope": [
+              "PDFp1–2 abstract/provenance",
+              "PDFp4 Table1/Methods",
+              "PDFp5 Results",
+              "PDFp6 Table5",
+              "relevant Discussion excerpts"
+            ],
+            "notVerified": [
+              "Actual1989 publisher bytes",
+              "Clinical identification of each radiographic/pain category",
+              "Patient-level fracture probability, predictive accuracy or surgery indication"
+            ],
+            "evidenceFiles": [
+              "oncology-four-primary-final26/mirels1989-reprint2003.pdf",
+              "oncology-four-primary-final26/mirels-table1-04.png"
+            ]
+          }
+        ],
+        "evidencePath": "reports/review-20261003/seven-limited-source-independent-check-final26.json",
+        "evidenceSha256": "b95bdfad7528cd2f56739eb04b63d3775e93b50844568167df849a489382cd80",
+        "originalEvidence": {
+          "file": "reports/review-20261003/oncology-four-independent-source-check-final26.json",
+          "sha256": "61b59c9f707a2425440f6b71c5deb27cbddf401c9c8be32841a040898c4d1e56"
+        },
+        "independentPeer": {
+          "status": "passed",
+          "requiredScope": "Metadata/helper/source-component peer before root application; no clinical approval inferred.",
+          "recordedAt": "2026-10-04T18:58:09.995Z",
+          "scope": "Existing independent technical complete-bank/metadata/helper peer recorded after guarded source26 application. This status does not certify clinical eligibility, full instrument conformance, professional translation or source rights; no new arithmetic/browser execution is claimed by this metadata amendment.",
+          "previousStatus": {
+            "status": "pending",
+            "requiredScope": "Metadata/helper/source-component peer before root application; no clinical approval inferred."
+          },
+          "peer": {
+            "file": "reports/review-20261003/seven-limited-source-evidence-independent-peer-final26-v2-r2.json",
+            "sha256": "28a96906dcfa0ce5272da34613c4ca61686204552a235ebc4adbb65e4ff6868c",
+            "summary": {
+              "checks": 18879,
+              "failed": 0,
+              "methods": 7,
+              "sourceRows": 2902,
+              "uniqueInputs": 2902,
+              "freshExecutions": 8706,
+              "helperAssertions": 25953,
+              "metadataMethods": 120,
+              "metadataRows": 52620,
+              "metadataUnique": 52548,
+              "metadataRepeats": 72
+            },
+            "scope": "Root independent peer of exact41 preimages/afterimages; independently frozen2902 input/expected objects checked before imports; public bank numeric projection excludes untested survival, zones, prose and risk codes. Original862fixtures, fields, methods, versions and approvals retained. Exact helper reversal restores all11 previous scopes;21 fresh Node helper executions replay all7 limited numeric components without clinical approval."
+          },
+          "application": {
+            "file": "reports/review-20261003/seven-limited-source-evidence-application-final26.json",
+            "sha256": "3b1cd7d57c7062aa640504095c1a7eca5b051af7c0c0c8d4d5b1965a869080da"
+          },
+          "reviewedBankScope": "Mirels1989 table in the explicit2003 author/publisher reprint: all81 preclassified four-domain point tuples, integer sum4–12 only. Actual1989 PDF not reviewed. Abstract8 versus body9 decision conflict remains unadjudicated. No imaging/pain classification, fracture probability, fixation or irradiation approval.",
+          "currentBinding": {
+            "source26BankSha256": "2cc897d2829889e4f2b36d8e4879d084e559506df46ef6b65b141e55b9d70d49",
+            "implementations": [
+              {
+                "file": "apps/website/private/tool-code/escore-de-mirels/calculator.js",
+                "sha256": "886b5b337905f52d0d15ec614d789a3778a1fa4a3748ba206fc2d5459351c8e1"
+              },
+              {
+                "file": "apps/dashboard/private/tool-code/escore-de-mirels/calculator.js",
+                "sha256": "886b5b337905f52d0d15ec614d789a3778a1fa4a3748ba206fc2d5459351c8e1"
+              },
+              {
+                "file": "apps/command-center/private/tool-code/escore-de-mirels/calculator.js",
+                "sha256": "886b5b337905f52d0d15ec614d789a3778a1fa4a3748ba206fc2d5459351c8e1"
+              }
+            ],
+            "subsequentReviewedRebinds": []
+          },
+          "originalFailuresAndScopeQualificationsPreserved": true,
+          "clinicalApproval": "not-performed",
+          "professionalLanguageApproval": "not-performed",
+          "sourceRightsApproval": "not-performed",
+          "fullMethodConformance": "not-performed"
+        },
+        "actualAdapterExecutions": 243,
+        "actualVmExecutions": 243,
+        "implementations": [
+          {
+            "id": "escore-de-mirels",
+            "app": "website",
+            "file": "apps/website/private/tool-code/escore-de-mirels/calculator.js",
+            "sha256": "886b5b337905f52d0d15ec614d789a3778a1fa4a3748ba206fc2d5459351c8e1"
+          },
+          {
+            "id": "escore-de-mirels",
+            "app": "dashboard",
+            "file": "apps/dashboard/private/tool-code/escore-de-mirels/calculator.js",
+            "sha256": "886b5b337905f52d0d15ec614d789a3778a1fa4a3748ba206fc2d5459351c8e1"
+          },
+          {
+            "id": "escore-de-mirels",
+            "app": "command-center",
+            "file": "apps/command-center/private/tool-code/escore-de-mirels/calculator.js",
+            "sha256": "886b5b337905f52d0d15ec614d789a3778a1fa4a3748ba206fc2d5459351c8e1"
+          }
+        ],
+        "qualifications": [
+          "Mirels1989 table in the explicit2003 author/publisher reprint: all81 preclassified four-domain point tuples, integer sum4–12 only. Actual1989 PDF not reviewed. Abstract8 versus body9 decision conflict remains unadjudicated. No imaging/pain classification, fracture probability, fixation or irradiation approval.",
+          "Original sourceExpected data retained alongside own expected raw-component projections; clinical codes/thresholds and survival fields deliberately excluded from the package replay.",
+          "All862 original historical fixtures/expected values/tolerances and approval flags preserved. Four inline metadata rows are only a declared subset of this complete downloadable bank."
+        ],
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed",
+        "publicOutputProjection": {
+          "status": "only-verified-raw-numeric-components",
+          "recordedAt": "2026-10-04T16:49:59.830Z",
+          "sourceEvidence": {
+            "file": "reports/review-20261003/seven-limited-source-independent-check-final26.json",
+            "sha256": "b95bdfad7528cd2f56739eb04b63d3775e93b50844568167df849a489382cd80"
+          },
+          "originalBank": {
+            "file": "reports/review-20261003/seven-limited-source-evidence-stage-final26/apps/website/private/tool-code/escore-de-mirels/independent-source-cases.json",
+            "sha256": "e842a96ba59a4426dafc5e024a6317eb0a0b9a1b537e6d7c3833df0f07d22d13"
+          },
+          "originalReportsPreserved": true,
+          "excluded": [
+            "Unexposed MASCC risk flag and USC/VNPI group expectations",
+            "MACIS survival and other untested returned raw fields",
+            "Karvonen exercise-zone main display and all untested main display values",
+            "Original API error prose; only rejection presence is tested"
+          ],
+          "clinicalApproval": "not-performed",
+          "professionalLanguageApproval": "not-performed"
+        },
+        "publicCandidateBankOmitted": true
+      },
+      "clinicalApproval": "not-performed",
+      "translationApproval": "not-performed",
+      "releaseApproval": "not-performed",
+      "implementationHash": "886b5b337905f52d0d15ec614d789a3778a1fa4a3748ba206fc2d5459351c8e1"
+    },
+    "limits": "O Mirels de 1989 foi desenvolvido em lesões metastáticas de ossos longos, irradiadas sem fixação profilática, com fraturas avaliadas em seis meses. O resumo original e versões interpretativas posteriores não usam necessariamente o mesmo corte de decisão; a edição e a conduta correspondente devem estar explícitas. O total não estabelece sozinho escolha entre radioterapia e cirurgia.",
+    "sourceLimitEvidence": {
+      "checkedAt": "2026-10-04T02:52:02.904Z",
+      "scope": "Targeted source reading and authorial documentation, not full method or clinical approval.",
+      "sourceReviewFile": "remaining-native-population-limits-review.json",
+      "sourceReviewSha256": "ba61a9b120a338c518c34ba9f324558b12580e7f5371ea81304b030b45ea44a5",
+      "readingOutcome": "review-outcome-recorded",
+      "unresolved": [
+        "DOI do registro PMID 2684463 difere do cadastrado; tabela e fonte posterior 2010 precisam esclarecer atribuição/cortes. Não generalizar para lesões não metastáticas ou outros ossos."
+      ],
+      "fullMethodConformanceReviewed": false,
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed"
     }
   },
-  "review": {
-    "status": "needs-review",
-    "reason": "Revisão documental e clínica independente pendente.",
-    "clinicalValidation": "not-performed"
+  "currentSource": {
+    "file": "apps/website/private/tool-code/escore-de-mirels/calculator.js",
+    "bytes": 4941,
+    "sha256": "886b5b337905f52d0d15ec614d789a3778a1fa4a3748ba206fc2d5459351c8e1"
   },
-  "clinicalValidation": "not-performed"
+  "sourceToolSha256": "59b4d9c06854b77f7accb5580a0772950bd68b9632fb7af363e59bd412b2964b",
+  "omittedFullReferenceBanks": [
+    {
+      "rows": 4,
+      "sha256": "33281a0f31f8f11c4df58960cbc3bf8c0b300b9cd81fef70e3c7ae6202686e95",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    },
+    {
+      "rows": 4,
+      "sha256": "33281a0f31f8f11c4df58960cbc3bf8c0b300b9cd81fef70e3c7ae6202686e95",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    }
+  ],
+  "clinicalApproval": "not-performed",
+  "professionalLanguageApproval": "not-performed",
+  "sourceRightsApproval": "not-performed"
 }
