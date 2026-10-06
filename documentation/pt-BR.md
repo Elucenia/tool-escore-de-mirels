@@ -85,3 +85,35 @@ Resultado da fórmula ou classificação. Interpretação, conduta e aplicabilid
 Apache-2.0 aplica-se somente ao código da ELUCENIA. Os instrumentos, publicações, traduções e dados mantêm os direitos dos respectivos titulares. Preserve LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Resultados documentados
+
+As informações abaixo preservam as saídas do método para exemplos sintéticos. Não constituem validação clínica independente.
+
+### 1
+
+Até 7 pontos: baixo risco de fratura (cerca de 4%)
+
+Radioterapia e observação.
+
+
+### 2
+
+8 pontos: risco intermediário (cerca de 15%)
+
+Julgamento clínico: considerar fixação profilática.
+
+
+### 3
+
+9 pontos ou mais: alto risco de fratura (33% ou mais)
+
+Fixação profilática antes da radioterapia.
+
+
+### 4
+
+9 pontos ou mais: alto risco de fratura (33% ou mais)
+
+Fixação profilática antes da radioterapia.
+

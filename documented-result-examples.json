@@ -1,0 +1,707 @@
+{
+  "id": "escore-de-mirels",
+  "implementationVersion": "escore-de-mirels@native-2026-10-05+2c1ee6469354",
+  "scope": "Rendered current output against the same source method; not an independent numerical/clinical oracle",
+  "locales": {
+    "pt-BR": [
+      {
+        "name": "Úmero, dor leve, blástica, menos de 1/3: 4 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Até 7 pontos: baixo risco de fratura (cerca de 4%)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Radioterapia e observação.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Tíbia, dor moderada, mista, 1/3 a 2/3: 8 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "8 pontos: risco intermediário (cerca de 15%)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Julgamento clínico: considerar fixação profilática.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Fêmur proximal, dor funcional, lítica, 1/3 a 2/3: 11 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "9 pontos ou mais: alto risco de fratura (33% ou mais)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Fixação profilática antes da radioterapia.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Limite: fêmur, dor moderada, lítica, 1/3 a 2/3: 9 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "9 pontos ou mais: alto risco de fratura (33% ou mais)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Fixação profilática antes da radioterapia.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "en": [
+      {
+        "name": "Úmero, dor leve, blástica, menos de 1/3: 4 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Up to 7 points: low fracture risk (about 4%)",
+            "locale": "en",
+            "template": "documented-authored-7ec0cb2734b6a4f5c39d"
+          },
+          "note": {
+            "text": "Radiotherapy and observation.",
+            "locale": "en",
+            "template": "documented-authored-274b16161655ce7f4767"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Tíbia, dor moderada, mista, 1/3 a 2/3: 8 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "8 points: intermediate risk (about 15%)",
+            "locale": "en",
+            "template": "documented-authored-93bd05a43ed224d53aa5"
+          },
+          "note": {
+            "text": "Clinical judgment: consider prophylactic fixation.",
+            "locale": "en",
+            "template": "documented-authored-5ad0e92905d1c86d6aaa"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Fêmur proximal, dor funcional, lítica, 1/3 a 2/3: 11 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "9 points or more: high fracture risk (33% or more)",
+            "locale": "en",
+            "template": "documented-authored-6950f8e1e48c8538e7d3"
+          },
+          "note": {
+            "text": "Prophylactic fixation before radiotherapy.",
+            "locale": "en",
+            "template": "documented-authored-4199d33dd75fec9dade0"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Limite: fêmur, dor moderada, lítica, 1/3 a 2/3: 9 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "9 points or more: high fracture risk (33% or more)",
+            "locale": "en",
+            "template": "documented-authored-6950f8e1e48c8538e7d3"
+          },
+          "note": {
+            "text": "Prophylactic fixation before radiotherapy.",
+            "locale": "en",
+            "template": "documented-authored-4199d33dd75fec9dade0"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "es": [
+      {
+        "name": "Úmero, dor leve, blástica, menos de 1/3: 4 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Hasta 7 puntos: bajo riesgo de fractura (cerca del 4%)",
+            "locale": "es",
+            "template": "documented-authored-7ec0cb2734b6a4f5c39d"
+          },
+          "note": {
+            "text": "Radioterapia y observación.",
+            "locale": "es",
+            "template": "documented-authored-274b16161655ce7f4767"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Tíbia, dor moderada, mista, 1/3 a 2/3: 8 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "8 puntos: riesgo intermedio (cerca del 15%)",
+            "locale": "es",
+            "template": "documented-authored-93bd05a43ed224d53aa5"
+          },
+          "note": {
+            "text": "Juicio clínico: considerar fijación profiláctica.",
+            "locale": "es",
+            "template": "documented-authored-5ad0e92905d1c86d6aaa"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Fêmur proximal, dor funcional, lítica, 1/3 a 2/3: 11 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "9 puntos o más: alto riesgo de fractura (33% o más)",
+            "locale": "es",
+            "template": "documented-authored-6950f8e1e48c8538e7d3"
+          },
+          "note": {
+            "text": "Fijación profiláctica antes de la radioterapia.",
+            "locale": "es",
+            "template": "documented-authored-4199d33dd75fec9dade0"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Limite: fêmur, dor moderada, lítica, 1/3 a 2/3: 9 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "9 puntos o más: alto riesgo de fractura (33% o más)",
+            "locale": "es",
+            "template": "documented-authored-6950f8e1e48c8538e7d3"
+          },
+          "note": {
+            "text": "Fijación profiláctica antes de la radioterapia.",
+            "locale": "es",
+            "template": "documented-authored-4199d33dd75fec9dade0"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "fr": [
+      {
+        "name": "Úmero, dor leve, blástica, menos de 1/3: 4 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Jusqu’à 7 points : faible risque de fracture (environ 4 %)",
+            "locale": "fr",
+            "template": "documented-authored-7ec0cb2734b6a4f5c39d"
+          },
+          "note": {
+            "text": "Radiothérapie et surveillance.",
+            "locale": "fr",
+            "template": "documented-authored-274b16161655ce7f4767"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Tíbia, dor moderada, mista, 1/3 a 2/3: 8 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "8 points : risque intermédiaire (environ 15 %)",
+            "locale": "fr",
+            "template": "documented-authored-93bd05a43ed224d53aa5"
+          },
+          "note": {
+            "text": "Jugement clinique : envisager une fixation prophylactique.",
+            "locale": "fr",
+            "template": "documented-authored-5ad0e92905d1c86d6aaa"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Fêmur proximal, dor funcional, lítica, 1/3 a 2/3: 11 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "9 points ou plus : risque élevé de fracture (33 % ou plus)",
+            "locale": "fr",
+            "template": "documented-authored-6950f8e1e48c8538e7d3"
+          },
+          "note": {
+            "text": "Fixation prophylactique avant la radiothérapie.",
+            "locale": "fr",
+            "template": "documented-authored-4199d33dd75fec9dade0"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Limite: fêmur, dor moderada, lítica, 1/3 a 2/3: 9 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "9 points ou plus : risque élevé de fracture (33 % ou plus)",
+            "locale": "fr",
+            "template": "documented-authored-6950f8e1e48c8538e7d3"
+          },
+          "note": {
+            "text": "Fixation prophylactique avant la radiothérapie.",
+            "locale": "fr",
+            "template": "documented-authored-4199d33dd75fec9dade0"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "de": [
+      {
+        "name": "Úmero, dor leve, blástica, menos de 1/3: 4 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Bis zu 7 Punkte: geringes Frakturrisiko (etwa 4 %)",
+            "locale": "de",
+            "template": "documented-authored-7ec0cb2734b6a4f5c39d"
+          },
+          "note": {
+            "text": "Strahlentherapie und Beobachtung.",
+            "locale": "de",
+            "template": "documented-authored-274b16161655ce7f4767"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Tíbia, dor moderada, mista, 1/3 a 2/3: 8 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "8 Punkte: intermediäres Risiko (etwa 15 %)",
+            "locale": "de",
+            "template": "documented-authored-93bd05a43ed224d53aa5"
+          },
+          "note": {
+            "text": "Klinische Beurteilung: prophylaktische Stabilisierung erwägen.",
+            "locale": "de",
+            "template": "documented-authored-5ad0e92905d1c86d6aaa"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Fêmur proximal, dor funcional, lítica, 1/3 a 2/3: 11 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "9 Punkte oder mehr: hohes Frakturrisiko (33 % oder mehr)",
+            "locale": "de",
+            "template": "documented-authored-6950f8e1e48c8538e7d3"
+          },
+          "note": {
+            "text": "Prophylaktische Fixierung vor der Strahlentherapie.",
+            "locale": "de",
+            "template": "documented-authored-4199d33dd75fec9dade0"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Limite: fêmur, dor moderada, lítica, 1/3 a 2/3: 9 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "9 Punkte oder mehr: hohes Frakturrisiko (33 % oder mehr)",
+            "locale": "de",
+            "template": "documented-authored-6950f8e1e48c8538e7d3"
+          },
+          "note": {
+            "text": "Prophylaktische Fixierung vor der Strahlentherapie.",
+            "locale": "de",
+            "template": "documented-authored-4199d33dd75fec9dade0"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "it": [
+      {
+        "name": "Úmero, dor leve, blástica, menos de 1/3: 4 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Fino a 7 punti: basso rischio di frattura (circa 4%)",
+            "locale": "it",
+            "template": "documented-authored-7ec0cb2734b6a4f5c39d"
+          },
+          "note": {
+            "text": "Radioterapia e osservazione.",
+            "locale": "it",
+            "template": "documented-authored-274b16161655ce7f4767"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Tíbia, dor moderada, mista, 1/3 a 2/3: 8 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "8 punti: rischio intermedio (circa 15%)",
+            "locale": "it",
+            "template": "documented-authored-93bd05a43ed224d53aa5"
+          },
+          "note": {
+            "text": "Giudizio clinico: considerare la fissazione profilattica.",
+            "locale": "it",
+            "template": "documented-authored-5ad0e92905d1c86d6aaa"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Fêmur proximal, dor funcional, lítica, 1/3 a 2/3: 11 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "9 punti o più: alto rischio di frattura (33% o più)",
+            "locale": "it",
+            "template": "documented-authored-6950f8e1e48c8538e7d3"
+          },
+          "note": {
+            "text": "Fissazione profilattica prima della radioterapia.",
+            "locale": "it",
+            "template": "documented-authored-4199d33dd75fec9dade0"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Limite: fêmur, dor moderada, lítica, 1/3 a 2/3: 9 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "9 punti o più: alto rischio di frattura (33% o più)",
+            "locale": "it",
+            "template": "documented-authored-6950f8e1e48c8538e7d3"
+          },
+          "note": {
+            "text": "Fissazione profilattica prima della radioterapia.",
+            "locale": "it",
+            "template": "documented-authored-4199d33dd75fec9dade0"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "ar": [
+      {
+        "name": "Úmero, dor leve, blástica, menos de 1/3: 4 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "حتى 7 نقاط: خطر منخفض للكسور (حوالي 4%)",
+            "locale": "ar",
+            "template": "documented-authored-7ec0cb2734b6a4f5c39d"
+          },
+          "note": {
+            "text": "العلاج الإشعاعي والمراقبة.",
+            "locale": "ar",
+            "template": "documented-authored-274b16161655ce7f4767"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Tíbia, dor moderada, mista, 1/3 a 2/3: 8 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "8 نقاط: خطر متوسط (حوالي 15%)",
+            "locale": "ar",
+            "template": "documented-authored-93bd05a43ed224d53aa5"
+          },
+          "note": {
+            "text": "التقدير السريري: النظر في التثبيت الوقائي.",
+            "locale": "ar",
+            "template": "documented-authored-5ad0e92905d1c86d6aaa"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Fêmur proximal, dor funcional, lítica, 1/3 a 2/3: 11 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "9 نقاط أو أكثر: خطر مرتفع للكسور (33% أو أكثر)",
+            "locale": "ar",
+            "template": "documented-authored-6950f8e1e48c8538e7d3"
+          },
+          "note": {
+            "text": "التثبيت الوقائي قبل العلاج الإشعاعي.",
+            "locale": "ar",
+            "template": "documented-authored-4199d33dd75fec9dade0"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Limite: fêmur, dor moderada, lítica, 1/3 a 2/3: 9 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "9 نقاط أو أكثر: خطر مرتفع للكسور (33% أو أكثر)",
+            "locale": "ar",
+            "template": "documented-authored-6950f8e1e48c8538e7d3"
+          },
+          "note": {
+            "text": "التثبيت الوقائي قبل العلاج الإشعاعي.",
+            "locale": "ar",
+            "template": "documented-authored-4199d33dd75fec9dade0"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "zh": [
+      {
+        "name": "Úmero, dor leve, blástica, menos de 1/3: 4 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "最多 7 分：骨折低风险（约 4%）",
+            "locale": "zh",
+            "template": "documented-authored-7ec0cb2734b6a4f5c39d"
+          },
+          "note": {
+            "text": "放疗和观察。",
+            "locale": "zh",
+            "template": "documented-authored-274b16161655ce7f4767"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Tíbia, dor moderada, mista, 1/3 a 2/3: 8 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "8 分：中等风险（约 15%）",
+            "locale": "zh",
+            "template": "documented-authored-93bd05a43ed224d53aa5"
+          },
+          "note": {
+            "text": "临床判断：考虑预防性固定。",
+            "locale": "zh",
+            "template": "documented-authored-5ad0e92905d1c86d6aaa"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Fêmur proximal, dor funcional, lítica, 1/3 a 2/3: 11 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "9 分或以上：骨折高风险（33% 或以上）",
+            "locale": "zh",
+            "template": "documented-authored-6950f8e1e48c8538e7d3"
+          },
+          "note": {
+            "text": "放疗前进行预防性固定。",
+            "locale": "zh",
+            "template": "documented-authored-4199d33dd75fec9dade0"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Limite: fêmur, dor moderada, lítica, 1/3 a 2/3: 9 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "9 分或以上：骨折高风险（33% 或以上）",
+            "locale": "zh",
+            "template": "documented-authored-6950f8e1e48c8538e7d3"
+          },
+          "note": {
+            "text": "放疗前进行预防性固定。",
+            "locale": "zh",
+            "template": "documented-authored-4199d33dd75fec9dade0"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "ja": [
+      {
+        "name": "Úmero, dor leve, blástica, menos de 1/3: 4 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "7点まで：骨折リスクが低い（約4%）",
+            "locale": "ja",
+            "template": "documented-authored-7ec0cb2734b6a4f5c39d"
+          },
+          "note": {
+            "text": "放射線療法と経過観察。",
+            "locale": "ja",
+            "template": "documented-authored-274b16161655ce7f4767"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Tíbia, dor moderada, mista, 1/3 a 2/3: 8 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "8点：中間リスク（約15%）",
+            "locale": "ja",
+            "template": "documented-authored-93bd05a43ed224d53aa5"
+          },
+          "note": {
+            "text": "臨床判断：予防的固定を考慮する。",
+            "locale": "ja",
+            "template": "documented-authored-5ad0e92905d1c86d6aaa"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Fêmur proximal, dor funcional, lítica, 1/3 a 2/3: 11 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "9点以上：高い骨折リスク（33%以上）",
+            "locale": "ja",
+            "template": "documented-authored-6950f8e1e48c8538e7d3"
+          },
+          "note": {
+            "text": "放射線療法前の予防的固定。",
+            "locale": "ja",
+            "template": "documented-authored-4199d33dd75fec9dade0"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Limite: fêmur, dor moderada, lítica, 1/3 a 2/3: 9 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "9点以上：高い骨折リスク（33%以上）",
+            "locale": "ja",
+            "template": "documented-authored-6950f8e1e48c8538e7d3"
+          },
+          "note": {
+            "text": "放射線療法前の予防的固定。",
+            "locale": "ja",
+            "template": "documented-authored-4199d33dd75fec9dade0"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "hi": [
+      {
+        "name": "Úmero, dor leve, blástica, menos de 1/3: 4 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "7 अंक तक: फ्रैक्चर का कम जोखिम (लगभग 4%)",
+            "locale": "hi",
+            "template": "documented-authored-7ec0cb2734b6a4f5c39d"
+          },
+          "note": {
+            "text": "रेडियोथेरेपी और अवलोकन।",
+            "locale": "hi",
+            "template": "documented-authored-274b16161655ce7f4767"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Tíbia, dor moderada, mista, 1/3 a 2/3: 8 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "8 अंक: मध्यम जोखिम (लगभग 15%)",
+            "locale": "hi",
+            "template": "documented-authored-93bd05a43ed224d53aa5"
+          },
+          "note": {
+            "text": "नैदानिक निर्णय: प्रोफिलैक्टिक फिक्सेशन पर विचार करें।",
+            "locale": "hi",
+            "template": "documented-authored-5ad0e92905d1c86d6aaa"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Fêmur proximal, dor funcional, lítica, 1/3 a 2/3: 11 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "9 अंक या अधिक: फ्रैक्चर का उच्च जोखिम (33% या अधिक)",
+            "locale": "hi",
+            "template": "documented-authored-6950f8e1e48c8538e7d3"
+          },
+          "note": {
+            "text": "रेडियोथेरेपी से पहले प्रोफिलैक्टिक फिक्सेशन।",
+            "locale": "hi",
+            "template": "documented-authored-4199d33dd75fec9dade0"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Limite: fêmur, dor moderada, lítica, 1/3 a 2/3: 9 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "9 अंक या अधिक: फ्रैक्चर का उच्च जोखिम (33% या अधिक)",
+            "locale": "hi",
+            "template": "documented-authored-6950f8e1e48c8538e7d3"
+          },
+          "note": {
+            "text": "रेडियोथेरेपी से पहले प्रोफिलैक्टिक फिक्सेशन।",
+            "locale": "hi",
+            "template": "documented-authored-4199d33dd75fec9dade0"
+          },
+          "level": "high"
+        }
+      }
+    ]
+  }
+}

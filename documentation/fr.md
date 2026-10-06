@@ -85,3 +85,35 @@ Résultat de la formule ou de la classification. L’interprétation, la conduit
 Apache-2.0 s’applique uniquement au code d’ELUCENIA. Les droits sur les instruments, publications, traductions et données restent ceux de leurs titulaires respectifs. Conservez LICENSE et NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Résultats documentés
+
+Les informations ci-dessous conservent les sorties de la méthode pour des exemples synthétiques. Elles ne constituent pas une validation clinique indépendante.
+
+### 1
+
+Jusqu’à 7 points : faible risque de fracture (environ 4 %)
+
+Radiothérapie et surveillance.
+
+
+### 2
+
+8 points : risque intermédiaire (environ 15 %)
+
+Jugement clinique : envisager une fixation prophylactique.
+
+
+### 3
+
+9 points ou plus : risque élevé de fracture (33 % ou plus)
+
+Fixation prophylactique avant la radiothérapie.
+
+
+### 4
+
+9 points ou plus : risque élevé de fracture (33 % ou plus)
+
+Fixation prophylactique avant la radiothérapie.
+

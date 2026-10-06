@@ -1,0 +1,224 @@
+{
+  "schema": "elucenia-public-source-result-preservation-v1",
+  "id": "escore-de-mirels",
+  "source": {
+    "baselineFile": "reports/review-20261005-completion/public-native-output-baseline-r2/baseline.json",
+    "baselineSha256": "e5f274fa5acc74566e1c3d55afb6bb402ad9928337dd77a2945442f5b6c49439",
+    "previousCommit": "a86bf4a63daae149ce16d7a9976b37e0828a688d",
+    "oldEngineSha256": "886b5b337905f52d0d15ec614d789a3778a1fa4a3748ba206fc2d5459351c8e1",
+    "currentEngineSha256": "2c1ee64693544b895d2c64b8df866b44acf58391fd2716e7584c91c492440cf9"
+  },
+  "scope": "Existing synthetic inputs and same pinned mathematical-function outputs. Clinical interpretation correctness and professional translation are separate unperformed reviews.",
+  "clinicalApproval": "not-performed",
+  "professionalLanguageReview": "not-performed",
+  "cases": [
+    {
+      "caseIndex": 0,
+      "name": "Úmero, dor leve, blástica, menos de 1/3: 4 pontos",
+      "input": {
+        "local": "1",
+        "dor": "1",
+        "lesao": "1",
+        "tamanho": "1"
+      },
+      "publicOutput": {
+        "id": "escore-de-mirels",
+        "main": [
+          "4",
+          "de 12"
+        ],
+        "label": "Escore de Mirels",
+        "raw": {
+          "score": 4
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 4,
+        "level": "low"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "4",
+          "de 12"
+        ],
+        "label": "Escore de Mirels",
+        "level": "low",
+        "verdict": "Até 7 pontos: baixo risco de fratura (cerca de 4%)",
+        "note": "Radioterapia e observação.",
+        "raw": {
+          "score": 4
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 1,
+      "name": "Tíbia, dor moderada, mista, 1/3 a 2/3: 8 pontos",
+      "input": {
+        "local": "2",
+        "dor": "2",
+        "lesao": "2",
+        "tamanho": "2"
+      },
+      "publicOutput": {
+        "id": "escore-de-mirels",
+        "main": [
+          "8",
+          "de 12"
+        ],
+        "label": "Escore de Mirels",
+        "raw": {
+          "score": 8
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 8,
+        "level": "mid"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "8",
+          "de 12"
+        ],
+        "label": "Escore de Mirels",
+        "level": "mid",
+        "verdict": "8 pontos: risco intermediário (cerca de 15%)",
+        "note": "Julgamento clínico: considerar fixação profilática.",
+        "raw": {
+          "score": 8
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 2,
+      "name": "Fêmur proximal, dor funcional, lítica, 1/3 a 2/3: 11 pontos",
+      "input": {
+        "local": "3",
+        "dor": "3",
+        "lesao": "3",
+        "tamanho": "2"
+      },
+      "publicOutput": {
+        "id": "escore-de-mirels",
+        "main": [
+          "11",
+          "de 12"
+        ],
+        "label": "Escore de Mirels",
+        "raw": {
+          "score": 11
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 11,
+        "level": "high"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "11",
+          "de 12"
+        ],
+        "label": "Escore de Mirels",
+        "level": "high",
+        "verdict": "9 pontos ou mais: alto risco de fratura (33% ou mais)",
+        "note": "Fixação profilática antes da radioterapia.",
+        "raw": {
+          "score": 11
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 3,
+      "name": "Limite: fêmur, dor moderada, lítica, 1/3 a 2/3: 9 pontos",
+      "input": {
+        "local": "2",
+        "dor": "2",
+        "lesao": "3",
+        "tamanho": "2"
+      },
+      "publicOutput": {
+        "id": "escore-de-mirels",
+        "main": [
+          "9",
+          "de 12"
+        ],
+        "label": "Escore de Mirels",
+        "raw": {
+          "score": 9
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 9,
+        "level": "high"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "9",
+          "de 12"
+        ],
+        "label": "Escore de Mirels",
+        "level": "high",
+        "verdict": "9 pontos ou mais: alto risco de fratura (33% ou mais)",
+        "note": "Fixação profilática antes da radioterapia.",
+        "raw": {
+          "score": 9
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "note"
+      ]
+    }
+  ]
+}

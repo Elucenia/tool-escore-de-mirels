@@ -325,7 +325,7 @@
       "publicCandidateBankOmitted": true
     },
     "methodVersion": "Mirels 1989:local/dor/lesão/tamanho 1–3, total 4–12",
-    "implementationVersion": "escore-de-mirels@native-2026-10-03+886b5b337905",
+    "implementationVersion": "escore-de-mirels@native-2026-10-05+2c1ee6469354",
     "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/2684463/",
     "versionEvidence": {
       "status": "variant-and-source-edition-recorded",
@@ -639,7 +639,35 @@
       "clinicalApproval": "not-performed",
       "translationApproval": "not-performed",
       "releaseApproval": "not-performed",
-      "implementationHash": "886b5b337905f52d0d15ec614d789a3778a1fa4a3748ba206fc2d5459351c8e1"
+      "implementationHash": "2c1ee64693544b895d2c64b8df866b44acf58391fd2716e7584c91c492440cf9",
+      "documentedOutputContract": {
+        "fields": [
+          "level",
+          "verdict",
+          "rows",
+          "note"
+        ],
+        "scope": "Optional documented outputs already produced by the existing scientific method; no new classification or treatment decision.",
+        "sourceExposureReceipt": {
+          "file": "reports/review-20261005-completion/native-result-presentation-r1/applied-output-r1/receipt.json",
+          "sha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        },
+        "scientificBodiesUnchanged": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed"
+      },
+      "technicalBindingHistory": [
+        {
+          "recordedAt": "2026-10-05T23:55:42.176Z",
+          "scope": "Expose existing documented result fields; scientific body and complete input contract unchanged.",
+          "previousImplementationVersion": "escore-de-mirels@native-2026-10-03+886b5b337905",
+          "previousImplementationHash": "886b5b337905f52d0d15ec614d789a3778a1fa4a3748ba206fc2d5459351c8e1",
+          "implementationHash": "2c1ee64693544b895d2c64b8df866b44acf58391fd2716e7584c91c492440cf9",
+          "scientificBodySha256": "e85276683115c11c8a08c490b617391606f7137a1aaae50779ecc2e6796ea25d",
+          "metadataContractHash": "53dcf9b294d3495176208833221e34d3c399c464b02a0791f689991c5294e334",
+          "exposureReceiptSha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        }
+      ]
     },
     "limits": "O Mirels de 1989 foi desenvolvido em lesões metastáticas de ossos longos, irradiadas sem fixação profilática, com fraturas avaliadas em seis meses. O resumo original e versões interpretativas posteriores não usam necessariamente o mesmo corte de decisão; a edição e a conduta correspondente devem estar explícitas. O total não estabelece sozinho escolha entre radioterapia e cirurgia.",
     "sourceLimitEvidence": {
@@ -658,20 +686,20 @@
   },
   "currentSource": {
     "file": "apps/website/private/tool-code/escore-de-mirels/calculator.js",
-    "bytes": 4941,
-    "sha256": "886b5b337905f52d0d15ec614d789a3778a1fa4a3748ba206fc2d5459351c8e1"
+    "bytes": 5146,
+    "sha256": "2c1ee64693544b895d2c64b8df866b44acf58391fd2716e7584c91c492440cf9"
   },
-  "sourceToolSha256": "59b4d9c06854b77f7accb5580a0772950bd68b9632fb7af363e59bd412b2964b",
+  "sourceToolSha256": "38938213f8464cce25cb85a99e2a88414acc54faca1f7fa536674d33106fe20c",
   "omittedFullReferenceBanks": [
     {
       "rows": 4,
       "sha256": "33281a0f31f8f11c4df58960cbc3bf8c0b300b9cd81fef70e3c7ae6202686e95",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     },
     {
       "rows": 4,
       "sha256": "33281a0f31f8f11c4df58960cbc3bf8c0b300b9cd81fef70e3c7ae6202686e95",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     }
   ],
   "clinicalApproval": "not-performed",

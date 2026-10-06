@@ -85,3 +85,35 @@ Ergebnis der Formel oder Klassifikation. Interpretation, Vorgehen und Anwendbark
 Apache-2.0 gilt nur für den ELUCENIA-Code. Die Rechte an Instrumenten, Veröffentlichungen, Übersetzungen und Daten verbleiben bei den jeweiligen Rechteinhabern. Bewahren Sie LICENSE und NOTICE auf.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Dokumentierte Ergebnisse
+
+Die folgenden Angaben bewahren die Ausgaben der Methode für synthetische Beispiele. Sie stellen keine unabhängige klinische Validierung dar.
+
+### 1
+
+Bis zu 7 Punkte: geringes Frakturrisiko (etwa 4 %)
+
+Strahlentherapie und Beobachtung.
+
+
+### 2
+
+8 Punkte: intermediäres Risiko (etwa 15 %)
+
+Klinische Beurteilung: prophylaktische Stabilisierung erwägen.
+
+
+### 3
+
+9 Punkte oder mehr: hohes Frakturrisiko (33 % oder mehr)
+
+Prophylaktische Fixierung vor der Strahlentherapie.
+
+
+### 4
+
+9 Punkte oder mehr: hohes Frakturrisiko (33 % oder mehr)
+
+Prophylaktische Fixierung vor der Strahlentherapie.
+
